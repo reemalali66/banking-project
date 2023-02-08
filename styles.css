@@ -100,12 +100,14 @@ footer{
     text-align: center;
     font-size: large;
     color: rgb(255, 255, 255);
+    padding: 50px;
 }
 footer a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     size: 50px;
     margin-left: 40px;
+    
     
 
 }
@@ -114,4 +116,34 @@ footer a {
     margin-left: 10px;
     
  
+}
+
+.carousel-item img {
+
+    width: auto;
+}
+#imgsec2 {
+    display: flex;
+    
+    padding: 50px;
+}
+
+
+#section2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.imgicon{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 80px;
+   
+    
 }
