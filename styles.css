@@ -1,0 +1,117 @@
+body{
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#parent{
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+#right{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+nav a {
+    margin-left: 70px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+   
+
+}
+
+img{
+    width: 250px;
+}
+
+button{
+    padding: 10px 20px;
+  
+
+}
+
+.child{
+    width: 25%;
+    background-image: url("bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #070606;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url("h1.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+     align-items: center;
+  
+}
+
+header button {
+    padding: 5px 10px;
+    background-image:url("h1.PNG") ;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    
+}
+
+#logo{
+    width: 10%;
+}
+
+.logInForm{
+    background-image: url("bg3.jpg");
+padding: 40px;
+
+}
+
+.logInForm button{
+    padding: 5px 70px;
+}
+.logInForm a{
+    font-size: smaller;
+    
+}
+
+#chatbot{
+    width: 60px;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+}
+footer{
+    background-image: url("h1.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    size: 50px;
+    margin-left: 40px;
+    
+
+}
+
+.icons{
+    margin-left: 10px;
+    
+ 
+}
