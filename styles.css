@@ -1,9 +1,10 @@
 body{
-    background-image: url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #e1e9f0;
+
     
 }
+
+  
 #parent{
     display: flex;
     padding: 20px;
@@ -18,7 +19,7 @@ body{
 
 nav a {
     margin-left: 70px;
-    color: rgb(255, 255, 255);
+    color: #694545;
     text-decoration: none;
    
 
@@ -30,22 +31,38 @@ img{
 
 button{
     padding: 10px 20px;
+    background-color: #c2d3e1;
+    color: #694545;
+    border: none;
   
+}
 
+button:hover{
+    background-color: #626262;
+    color: white;
 }
 
 .child{
     width: 25%;
-    background-image: url("bg3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f1f1f1;
     text-align: center;
-    color: #070606;
+    color: #694545;
     padding: 10px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
+    font-family:Abadi;
     
+    
+}
+
+.child img{
+    width: 250px;
+    height: 250px;
+}
+.child:hover{
+    background-color: #dbd8d8a1;
+    color: #694545;
     
 }
 
@@ -54,18 +71,17 @@ header{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-image: url("h1.PNG");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f1f1f1;
      align-items: center;
+    
   
 }
 
 header button {
     padding: 5px 10px;
-    background-image:url("h1.PNG") ;
-    color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
+    background-color: #f1f1f1;
+    color: #694545;
+    border-color:#f1f1f1;
     
 }
 
@@ -74,7 +90,7 @@ header button {
 }
 
 .logInForm{
-    background-image: url("bg3.jpg");
+    background-color: #f1f1f1;
 padding: 40px;
 
 }
@@ -94,16 +110,16 @@ padding: 40px;
     right: 30px;
 }
 footer{
-    background-image: url("h1.PNG");
+    background-color: #f1f1f1;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     font-size: large;
-    color: rgb(255, 255, 255);
+    color: #242424;
     padding: 50px;
 }
 footer a {
-    color: rgb(255, 255, 255);
+    color: #242424;
     text-decoration: none;
     size: 50px;
     margin-left: 40px;
