@@ -1,7 +1,7 @@
 body{
     background-color: #e1e9f0;
     color: #694545;
-    font-family:Abadi;
+   
    
 }
 
@@ -40,6 +40,9 @@ button:hover{
 #logo{
     width: 10%;
 }
+section{
+    font-family:Abadi;
+}
 #s1{
     display: flex;
     justify-content: space-around;
@@ -47,18 +50,27 @@ button:hover{
    padding-left: 300px;
    padding-right: 300px;
    align-items: center;
-   color: #694545;
+   color: white;
+   background-image: url( "https://images.unsplash.com/photo-1500316124030-4cffa46f10f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVhZSUyMG1vbmV5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+   background-repeat: no-repeat;
+    background-size: cover;
    
 }
+ x
 #s1 h3{
     margin: 70px;
     text-align: center;
+}
+.card{
+    background-size: cover;
+    background-position: center;
 }
 #s2 button {
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
     color: #694545;
+    margin: 10px;
 }
 #s2 button:hover{
     background-color: #626262;
@@ -72,7 +84,7 @@ button:hover{
 
 
 #backbtn{
-    width: 160px;
+    width: 145px;
 }
 #chatbot{
     width: 60px;

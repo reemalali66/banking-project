@@ -1,0 +1,12 @@
+body{
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Abadi;
+}
+h1{
+    text-align: center;
+}
+#uName{
+    display: flex;
+}

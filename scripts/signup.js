@@ -31,7 +31,10 @@ allAccounts.forEach(account => {
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">${account.name}</h3>
                             <p>  ${account.accounttype}</p>
                             <p id="p_${account.id}"></p>
-                            <button id="${account.id}">Open Now</button>
+                            <button id="lmore" > Learn More</button>
+                          
+                            <button type="button" id="${account.id} class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Now</button>
+                            
                         </div>
                     </div>
             </div>`;

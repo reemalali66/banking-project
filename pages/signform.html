@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="../styles/signform.css">
+</head>
+<body>
+
+    <h1> APPLY NOW</h1>
+    <h3> The information given in this section is considered as the information of the primary account owner information.</h3>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+       
+        <input type="radio" name="payment"/> Mr.
+        <input type="radio" name="payment"/> Mrs.
+        <input type="radio" name="payment"/> Miss.
+        <input type="radio" name="payment"/> Other <br/>
+        <br>
+        <label for="username">Name : </label>
+        <br>
+    <div id="uName">
+        <input name="firstname" id="firstname" type="text" required placeholder="First Name "/><br/>
+        <input name="lastname" id="lastname" type="text" required placeholder="Last Name"/><br/> 
+    </div>
+    <br>
+        <label for="userphone">Phone number : </label>
+        <br>
+        <input type="tel" required placeholder="+971 - your number"/><br/>
+        <br>
+        <label for="useremail">Email : </label>
+        <br>
+        <input id="useremail" type="email" required placeholder="Your email here"/><br/>
+        <br>
+        <label for="DOB">Date of Birth : </label>
+        <br>
+        <input type="date"/><br/>
+        <br>
+        <label for="userCity">City : </label>
+        <br>
+        <select>
+            <option>Abu Dhabi</option>
+            <option>Dubai</option>
+            <option>Sharjah</option>
+            <option>Ajman</option>
+            <option>Umm AlQuwain</option>
+            <option>Ras Al Khaimah</option>
+            <option>Fujairah</option>
+        </select><br/>
+        <br>
+        
+        <label for="userCiti">Citizenship : </label><br>
+        <input type="radio" name="payment"/> UAE National
+        <input type="radio" name="payment"/> Expats <br/>
+        <input name="country" id="country" type="text" required placeholder="Enter your country "/><br/>
+      
+       
+
+       <br>
+        <textarea placeholder="Primary Owner Signature" cols="60" rows="5"></textarea><br/>
+  
+        <input type="checkbox"/> I agree to terms <br><br>
+        <input  type="submit" value="SUBMIT"/><br/>
+
+    </form>
+    
+</body>
+</html>

@@ -9,6 +9,14 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/signup.css">
+   
+    <style>
+      .modal-body{
+        background-image: url(bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -28,14 +36,12 @@
           <Button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg></Button>
-          <Button id="backbtn">Back to Home</Button>
+          <Button id="backbtn" onclick="document.location='../index.html'">Back to Home</Button>
           </div>
   
         </header>
 
         <section id="s1">
-
-          <img id="imgs1"  src="https://images.unsplash.com/photo-1500316124030-4cffa46f10f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVhZSUyMG1vbmV5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
           <h3> Choose from our wide range of  Current, 
           Savings and Minor Accounts</h3>
           
@@ -44,10 +50,84 @@
 
         <section id="s2">
           <div class="container px-4 py-5" id="custom-cards">
-              <h2 class="pb-2 border-bottom">All Accounts</h2>
               <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="accountList"></div>
+              
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">APPLY NOW</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+    
+    <h3> The information given in this section is considered as the information of the primary account owner information.</h3>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+       
+        <input type="radio" name="payment"/> Mr.
+        <input type="radio" name="payment"/> Mrs.
+        <input type="radio" name="payment"/> Miss.
+        <input type="radio" name="payment"/> Other <br/>
+        <br>
+        <label for="username">Name : </label>
+        <br>
+    <div id="uName">
+        <input name="firstname" id="firstname" type="text" required placeholder="First Name "/><br/>
+        <input name="lastname" id="lastname" type="text" required placeholder="Last Name"/><br/> 
+    </div>
+    <br>
+        <label for="userphone">Phone number : </label>
+        <br>
+        <input type="tel" required placeholder="+971 - your number"/><br/>
+        <br>
+        <label for="useremail">Email : </label>
+        <br>
+        <input id="useremail" type="email" required placeholder="Your email here"/><br/>
+        <br>
+        <label for="DOB">Date of Birth : </label>
+        <br>
+        <input type="date"/><br/>
+        <br>
+        <label for="userCity">City : </label>
+        <br>
+        <select>
+            <option>Abu Dhabi</option>
+            <option>Dubai</option>
+            <option>Sharjah</option>
+            <option>Ajman</option>
+            <option>Umm AlQuwain</option>
+            <option>Ras Al Khaimah</option>
+            <option>Fujairah</option>
+        </select><br/>
+        <br>
+        
+        <label for="userCiti">Citizenship : </label><br>
+        <input type="radio" name="payment"/> UAE National
+        <input type="radio" name="payment"/> Expats <br/>
+        <input name="country" id="country" type="text" required placeholder="Enter your country "/><br/>
+      
+       
+
+       <br>
+        <textarea placeholder="Primary Owner Signature" cols="60" rows="5"></textarea><br/>
+  
+        <input type="checkbox"/> I agree to terms <br><br>
+  
+
+    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">SUBMIT</button>
+                </div>
+              </div>
+            </div>
           </div>
       </section>
+
 
         <footer>
 
