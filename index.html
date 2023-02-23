@@ -8,6 +8,10 @@
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <header>
@@ -94,15 +98,15 @@
 
      
             <div> 
-              <img class="imgicon" id="icon1" src="cardicon.png" alt=""> 
+              <img class="imgicon" onmouseover="mOver()" onmouseout="dOver()"id="icon1" src="cardicon.png" alt=""> 
               <h3> IBAN and Swift</h3>
             </div>
             <div> 
-              <img  class="imgicon" id="icon2" src="vat.png" alt="">
+              <img  class="imgicon animate__animated animate__pulse" id="icon2" src="vat.png" alt="">
                <h3> VAT</h3>
             </div>
             <div> 
-              <img  class="imgicon" id="icon3" src="computer.png" alt=""> 
+              <img  class="imgicon animate__animated animate__pulse" id="icon3" src="computer.png" alt=""> 
               <h3> Digital Banking</h3>
             </div>
           
@@ -141,9 +145,9 @@
       </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-      
-      
+
     </script>
+    <script src="script.js"></script>
      <img id="chatbot" src="chatbox2.png" alt="">
 </body>
 </html>

@@ -114,3 +114,9 @@ footer a {
     
  
 }
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+
+   #clear {margin-left:700px;}
