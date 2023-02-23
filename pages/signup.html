@@ -16,6 +16,23 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+      #openBtn{
+        background-color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            width: 250px;
+           
+            
+      }
+      #openBtn:hover{
+            background-color: rgb(124, 124, 124);
+            color: white;
+        }
+
+        canvas {border:1px solid rgb(0, 0, 0); background:#ffffff;}
+        canvas:hover {cursor:crosshair;}
+        input#clear {margin-left:350px;}
     </style>
 </head>
 <body>
@@ -44,6 +61,12 @@
         <section id="s1">
           <h3> Choose from our wide range of  Current, 
           Savings and Minor Accounts</h3>
+        <br> <br> 
+    
+        <button type="button" id="openBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Now</button>
+                 
+          <br>
+          
           
 
         </section>
@@ -61,39 +84,45 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  
-    
-    <h3> The information given in this section is considered as the information of the primary account owner information.</h3>
+    <form action="#" method="POST" name="loginForm" onsubmit="return validateForm()">           
+    <h3> Account Type</h3>
+    <label for="accType">Account Type : </label>
+        <br>
+        <select>
+            <option>Current Account</option>
+            <option>Saving Account</option>
+            <option>Minor Account</option>
+        </select><br/>
+        <br>
+     <hr>
+    <h3>Personal Information</h3>
+    <p> The information given in this section is considered as the information of the primary account owner information.</p>
 
-    <form action="#" method="POST" enctype="multipart/form-data">
        
-        <input type="radio" name="payment"/> Mr.
-        <input type="radio" name="payment"/> Mrs.
-        <input type="radio" name="payment"/> Miss.
-        <input type="radio" name="payment"/> Other <br/>
+       
         <br>
         <label for="username">Name : </label>
         <br>
     <div id="uName">
-        <input name="firstname" id="firstname" type="text" required placeholder="First Name "/><br/>
-        <input name="lastname" id="lastname" type="text" required placeholder="Last Name"/><br/> 
+        <input name="firstName" id="firstname" type="text" required placeholder="First Name " ><br/>
+        <input name="lastName" id="lastname" type="text" required placeholder="Last Name"/><br/> 
     </div>
     <br>
-        <label for="userphone">Phone number : </label>
+        <label for="userPhone">Phone number : </label>
         <br>
-        <input type="tel" required placeholder="+971 - your number"/><br/>
+        <input name="Telephone" type="tel" required placeholder="971.........."/><br/>
         <br>
         <label for="useremail">Email : </label>
         <br>
-        <input id="useremail" type="email" required placeholder="Your email here"/><br/>
+        <input name="userEmail" id="userEmail" type="email" required placeholder="Your email here"/><br/>
         <br>
         <label for="DOB">Date of Birth : </label>
         <br>
-        <input type="date"/><br/>
+        <input name="Date" type="date" required/><br/>
         <br>
         <label for="userCity">City : </label>
         <br>
-        <select>
+        <select >
             <option>Abu Dhabi</option>
             <option>Dubai</option>
             <option>Sharjah</option>
@@ -104,25 +133,33 @@
         </select><br/>
         <br>
         
-        <label for="userCiti">Citizenship : </label><br>
-        <input type="radio" name="payment"/> UAE National
-        <input type="radio" name="payment"/> Expats <br/>
+        <label for="userCoun">Nationality : </label><br>
+        <input type="radio" id="1" name="payment"/> UAE National
+        <input type="radio" id="2" name="payment"/> Other <br/>
         <input name="country" id="country" type="text" required placeholder="Enter your country "/><br/>
       
        
 
        <br>
-        <textarea placeholder="Primary Owner Signature" cols="60" rows="5"></textarea><br/>
+       <canvas placeholder="Primary Owner Signature"  id="mycanvas" width="400" height="200" style="border:1px solid #000000;">
+      </canvas>
+      <br>
+      <input id="clear" type="submit" value="clear"/>
+      <br>
+      <img id="hdwrite-image"></img>
+       <a id="link"></a>
+       
   
-        <input type="checkbox"/> I agree to terms <br><br>
+        <input type="checkbox" name="checkbox" value="check" /> I agree to terms <br><br>
   
 
-    </form>
+   
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">SUBMIT</button>
+                  <button type="submit" class="btn btn-primary">SUBMIT</button>
                 </div>
+              </form>
               </div>
             </div>
           </div>
@@ -161,6 +198,18 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
         <script src="../scripts/signup.js"></script>
+        <script>
+          $(document).ready(function() {
+              hdwrite.addEvent();
+             
+              $('input#clear').on("click", function() {
+                  hdwrite.clear();
+              });
+          });
+          var canvas = document.getElementById('mycanvas');
+          var ctx = canvas.getContext("2d");
+          </script>
+       
     <img id="chatbot" src="chatbox2.png" alt="">
     
 </body>

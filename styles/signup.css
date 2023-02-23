@@ -44,11 +44,12 @@ section{
     font-family:Abadi;
 }
 #s1{
-    display: flex;
-    justify-content: space-around;
-   padding: 100px;
-   padding-left: 300px;
-   padding-right: 300px;
+   
+ 
+    padding: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
    align-items: center;
    color: white;
    background-image: url( "https://images.unsplash.com/photo-1500316124030-4cffa46f10f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVhZSUyMG1vbmV5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
@@ -59,7 +60,7 @@ section{
  x
 #s1 h3{
     margin: 70px;
-    text-align: center;
+
 }
 .card{
     background-size: cover;
