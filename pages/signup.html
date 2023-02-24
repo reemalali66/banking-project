@@ -34,6 +34,10 @@
         canvas {border:1px solid rgb(0, 0, 0); background:#ffffff;}
         canvas:hover {cursor:crosshair;}
         #clear {margin-left:700px;}
+        #c1 input{
+          margin-top:10px; width:150px; padding:10px; background:gray; border:0; outline:none; color:#fff
+        }
+        #c1 input:hover {background:navy;}
     </style>
 </head>
 <body>
@@ -101,8 +105,8 @@
 
 
     <label for="userGender">Gender: </label><br>
-    <input type="radio" id="M" name="Male"/> Male
-    <input type="radio" id="F" name="Female"/> Female <br/>
+    <input type="radio" id="M" name="gender" value="Male" checked/> Male
+    <input type="radio" id="F" name="gender" value="Female"/> Female <br/>
 
         <br>
         <label for="username">Name : </label>
@@ -126,7 +130,7 @@
         <br>
         <label for="DOB">Date of Birth : </label>
         <br>
-        <input name="Date" type="date" required/><br/>
+        <input id="DOB" name="Date" onchange="checkDate()" type="date" required/><br/>
         <p id="DateError"></p>
         <br>
         <label for="userCity">City : </label>
@@ -143,8 +147,8 @@
         <br>
         
         <label for="userCoun">Nationality : </label><br>
-        <input type="radio" id="1" name="payment"/> UAE National
-        <input type="radio" id="2" name="payment"/> Other <br/>
+        <input type="radio" id="1" name="country" value="UAE" checked /> UAE National
+        <input type="radio" id="2" name="country" value="Other"/> Other <br/>
     
         <input name="country" id="country" type="text" required placeholder="Enter your country "/><br/>
         
@@ -152,6 +156,7 @@
        
 
        <br>
+       <div id="c1"> 
        <canvas placeholder="Primary Owner Signature"  id="mycanvas" width="400" height="200" style="border:1px solid #000000;">
       </canvas>
       <br>
@@ -160,7 +165,7 @@
       <br>
       <img id="hdwrite-image"></img>
        <a id="link"></a>
-       
+      </div>
   
         <input type="checkbox" name="checkbox" value="check" required/> I agree to terms <br><br>
 
@@ -209,6 +214,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
         <script src="../scripts/signup.js"></script>
+        <script src="../scripts/handwriting.js"></script>
         <script>
           $(document).ready(function() {
               hdwrite.addEvent();
